@@ -2,7 +2,13 @@ html {
   font-size: 15px;
 }
 
+body {
+  background-color: $very-dark-blue;
+  font-family: "Overpass", sans-serif;
+}
+
 .container {
+  position: relative;
   margin: 0 auto;
   width: 90%;
   max-width: 1200px;

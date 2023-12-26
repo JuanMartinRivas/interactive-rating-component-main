@@ -1,7 +1,57 @@
 main {
+  .card {
+    position: relative;
+    top: 10em;
+    border-radius: 20px;
+    padding: 1.5em;
+    background-color: $medium-blue;
+
+    .section-header {
+      margin: 1em 0;
+      font-size: 1.5rem;
+      color: #fff;
+    }
+
+    .section-text {
+      color: $medium-grey;
+    }
+
+    .buttons-list {
+      display: flex;
+      justify-content: space-between;
+      padding: 0;
+
+      .list-item > .rating-text {
+        font-size: 1.1rem;
+        color: $medium-grey;
+        background-color: $dark-blue;
+        border-radius: 50%;
+        padding: 0.5em 1em;
+        cursor: pointer;
+        transition: 0.25s;
+
+        &:hover {
+          color: #fff;
+          background-color: $light-grey;
+        }
+      }
+
+      .rating-component {
+        display: none;
+      }
+    }
+  }
+
+  .star-icon {
+    border-radius: 50%;
+    background-color: $dark-blue;
+    padding: 0.75em;
+  }
+
   .shown-card {
     display: inline-block;
   }
+
   .hidden-card {
     display: none;
   }
