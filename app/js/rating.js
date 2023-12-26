@@ -1,11 +1,12 @@
 const form = document.querySelector('.form');
 const ratingComponent = document.querySelectorAll('.rating-component');
+const ratingText = document.querySelectorAll('.rating-text')
 const selectionTxt = document.querySelector('.selection-text');
 const ratingSection = document.querySelector('.rating-section');
 const backSection = document.querySelector('.back-section');
 
-form.addEventListener('submit', handleSubmit)
-form.addEventListener('submit', showBack)
+form.addEventListener('submit', handleSubmit);
+form.addEventListener('submit', showBack);
 
 function handleSubmit(e) {
     e.preventDefault();
@@ -28,3 +29,12 @@ function showBack(e) {
     backSection.classList.add('shown-card');
     backSection.classList.remove('hidden-card');
 }
+
+ratingText.forEach(item => {
+    item.addEventListener('click', () => {
+        ratingText.forEach((ifChecked) => {
+            ifChecked.classList.remove('checked');
+        });
+        item.classList.add('checked')
+    })
+})

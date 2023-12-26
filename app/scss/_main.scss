@@ -21,6 +21,11 @@ main {
       justify-content: space-between;
       padding: 0;
 
+      .checked {
+        color: #fff;
+        background-color: $orange;
+      }
+
       .list-item > .rating-text {
         font-size: 1.1rem;
         color: $medium-grey;
