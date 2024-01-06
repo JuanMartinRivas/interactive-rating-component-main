@@ -14,6 +14,7 @@ main {
 
     .section-text {
       color: $medium-grey;
+      margin-bottom: 2em;
     }
 
     .buttons-list {
@@ -21,29 +22,52 @@ main {
       justify-content: space-between;
       padding: 0;
 
-      .checked {
-        color: #fff;
-        background-color: $orange;
-      }
-
       .list-item > .rating-text {
-        font-size: 1.1rem;
         color: $medium-grey;
         background-color: $dark-blue;
         border-radius: 50%;
-        padding: 0.5em 1em;
+        padding: 0.75em 1.25em;
         cursor: pointer;
         transition: 0.25s;
+
+        &.wide {
+          padding: 0.75em 1.15em;
+        }
 
         &:hover {
           color: #fff;
           background-color: $light-grey;
+        }
+
+        &.checked {
+          color: #fff;
+          background-color: $orange;
         }
       }
 
       .rating-component {
         display: none;
       }
+    }
+  }
+
+  .submit-btn {
+    font-size: 1rem;
+    width: 100%;
+    margin-top: 1em;
+    border: none;
+    border-radius: 30px;
+    padding: 0.75em;
+    color: #fff;
+    background-color: $orange;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.25s;
+
+    &:hover {
+      color: $orange;
+      background-color: #fff;
     }
   }
 
