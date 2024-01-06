@@ -1,0 +1,22 @@
+.back-section {
+  .back-image {
+    margin: 0 auto;
+    margin-top: 1em;
+  }
+
+  .selection-text {
+    color: $orange;
+    background-color: $dark-blue;
+    margin: 0 auto;
+    margin-top: 2em;
+    border-radius: 30px;
+    padding: 0.25em 1em;
+    width: 70%;
+    text-align: center;
+  }
+
+  .section-header,
+  .section-text {
+    text-align: center;
+  }
+}
