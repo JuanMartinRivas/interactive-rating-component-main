@@ -1,7 +1,7 @@
 main {
   .card {
     position: relative;
-    top: 10em;
+    top: 12em;
     border-radius: 20px;
     padding: 2em;
     background-color: $medium-blue;
@@ -22,12 +22,14 @@ main {
       justify-content: space-between;
       padding: 0;
 
-      .list-item > .rating-text {
-        display: block;
+      .list-item>.rating-text {
+        height: 3rem;
+        aspect-ratio: 1/1;
+        display: grid;
+        place-content: center;
         color: $medium-grey;
         background-color: $dark-blue;
         border-radius: 50%;
-        padding: 0.75em 1.25em;
         cursor: pointer;
         transition: 0.25s;
 
