@@ -66,7 +66,7 @@ main .card {
   border-radius: 20px;
   padding: 2em;
   position: relative;
-  top: 10em;
+  top: 12em;
 }
 
 main .card .section-header {
@@ -87,13 +87,15 @@ main .card .buttons-list {
 }
 
 main .card .buttons-list .list-item > .rating-text {
+  aspect-ratio: 1;
   color: #7c8798;
   cursor: pointer;
   background-color: #252d37;
   border-radius: 50%;
-  padding: .75em 1.25em;
+  place-content: center;
+  height: 3rem;
   transition: all .25s;
-  display: block;
+  display: grid;
 }
 
 main .card .buttons-list .list-item > .rating-text:hover {
